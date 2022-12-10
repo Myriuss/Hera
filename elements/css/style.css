@@ -1,0 +1,417 @@
+.actif {
+    font-weight: 3rem;
+    font-size: 1.5rem;
+}
+
+h1#m_s {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.sticky {
+    top: 0;
+    z-index: 1;
+    position: sticky;
+}
+
+.menu {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.menu a {
+    width: 20%;
+    color: #fff;
+    font-size: 0.7rem;
+    width: 20%;
+    line-height: 2em;
+}
+
+.menu a:hover {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 3em;
+}
+
+iframe {
+    width: 80%;
+    height: 50vh;
+    margin: 2em;
+}
+
+.topbar-logo {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexsignup {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img img {
+    max-width: 50%;
+    margin: 3em;
+    box-shadow: rgba(128, 128, 128, 0.609) 0.1em 0.1em 3em;
+}
+
+.flexsignup form {
+    text-align: left;
+}
+
+.flexsignup form label {
+    width: 100%;
+}
+
+.radio {
+    border: 0.01px solid black;
+    border-radius: 1rem;
+}
+
+.radio input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    border: none;
+    position: relative;
+    top: 0.1em;
+}
+
+.radio input:checked {
+    border: 0.55em solid #ffff;
+}
+
+@media (max-width: 992px) {
+    .img img {
+        display: none;
+    }
+    .flexsignup {
+        display: block;
+    }
+}
+
+form input {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+     :root {
+        font-size: 3rem;
+    }
+    body,
+    .container {
+        overflow-x: hidden;
+    }
+    .menu {
+        width: 100%;
+        font-size: 2.5rem;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .menu a {
+        width: 45%;
+    }
+}
+
+
+/* ------ slick ----------*/
+
+.slick img {
+    display: inline;
+}
+
+
+/*------  home ---------*/
+
+#main-home {
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 3rem 0 3rem;
+}
+
+#home-categories {
+    width: 25%;
+}
+
+#home-produits {
+    max-width: 900px;
+    padding: 1rem;
+    width: 75%;
+}
+
+#home-produits #posts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#posts .post {
+    min-height: 10rem;
+    width: 30%;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 0.25rem rgba(128, 128, 128, 0.425);
+}
+
+.description {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.post .partentIMG img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    opacity: 0.5;
+}
+
+.post .partentIMG img:hover {
+    opacity: 1;
+}
+
+.post .partentIMG {
+    padding: 1rem 0.5rem 0 0.5rem;
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.post h3 {
+    margin-bottom: -2rem;
+    position: relative;
+    top: -5rem;
+    font-size: 3rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem gray;
+}
+
+.post:hover {
+    position: relative;
+    animation: 400ms sethover normal;
+    top: -1rem;
+}
+
+
+/*-----  --Categprie ----*/
+
+#home-categories {
+    padding: 1rem;
+}
+
+#home-categories h2,
+#home-produits h2 {
+    color: white;
+    line-height: 200%;
+    background-color: black;
+    border-radius: 1rem 1rem 0 0;
+}
+
+#home-produits h2 {
+    margin-bottom: 0;
+}
+
+form.q,
+form.filter,
+form.filter select {
+    line-height: 2rem;
+    height: 2rem;
+}
+
+form.q {
+    text-align: right;
+}
+
+#min,
+#max {
+    width: 5rem;
+}
+
+#home-categories ul li a,
+.inherit-txt {
+    color: inherit;
+}
+
+.inherit-txt:hover {
+    color: inherit;
+}
+
+.parentmore {
+    max-width: 1500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.more {
+    min-width: 70%;
+    margin: 0 1rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.more a {
+    margin: 1rem;
+}
+
+
+/** ---- theme ------*/
+
+.bg-color-primary {
+    background-color: var(--light);
+}
+
+.text-color-primary {
+    color: var(--dark);
+}
+
+input,
+select,
+textarea,
+.bg-color-secondary {
+    background-color: var(--lightSecondary);
+    color: gray;
+}
+
+.bg-color-secondary.post {
+    background-color: initial;
+}
+
+@media (max-width: 992px) {
+    #home-categories ul li {
+        margin: 1rem;
+    }
+    #main-home {
+        margin: 0.5rem;
+        display: block;
+    }
+    #home-produits {
+        width: 100%;
+    }
+    #home-categories {
+        width: 100%;
+    }
+    #posts .post {
+        width: 100%;
+    }
+    form.q input {
+        width: 80%;
+    }
+    .more {
+        min-width: 90%;
+    }
+}
+
+@keyframes sethover {
+    0% {
+        top: 0;
+    }
+    200% {
+        top: -0.2 rem;
+    }
+    40% {
+        top: -0.4 rem;
+    }
+    60% {
+        top: -0.6 rem;
+    }
+    80% {
+        top: - 0.8rem;
+    }
+    100% {
+        top: -1rem;
+    }
+}
+
+
+/* ---- Commande  ++++ */
+
+#main-cmd {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-cmd .Commande {
+    width: 50%;
+    margin: 4rem;
+}
+
+#main-cmd .navigation {
+    width: 25%;
+}
+
+#main-cmd .navigation a {
+    width: 100%;
+    padding: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin: 1rem 0 1rem 0;
+    color: inherit;
+}
+
+#main-cmd .navigation a:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+section#DoCommande form,
+.fm-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+section#historique .elemnt-Content {
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    width: 100%;
+    border: darkslategray 0.1rem solid;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 1rem;
+}
+
+.Commande section {
+    display: none;
+    height: 100%;
+}
+
+.Commande h2 {
+    margin: 4rem;
+}
+
+@media (max-width: 992px) {
+    #main-cmd {
+        display: block;
+    }
+    #main-cmd .Commande {
+        width: 100%;
+        margin: 4rem 1rem 4rem 1rem;
+    }
+    #main-cmd .navigation {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #main-cmd .navigation a {
+        width: 100%;
+    }
+}
+
+footer a {
+    margin: 2rem;
+}
+
+footer a svg {
+    color: red;
+}
