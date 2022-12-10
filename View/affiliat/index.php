@@ -1,6 +1,6 @@
 <?php 
 
-header('Location:singup');
+header('Location:signup');
 
 ?>
 

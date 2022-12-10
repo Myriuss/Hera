@@ -24,7 +24,7 @@ for ($i=1; $i < count($p_info) ; $i++)  {
 	}
 
 $directory=[
-	'admin','affiliat','cmd','contact','forgetpassword','home','login','article','logout','singup'
+	'admin','affiliat','cmd','contact','forgetpassword','home','login','article','logout','signup'
 ];
 if (!in_array($p_info['0'] , $directory)) {
 	$p_info['0'] = 'home';

@@ -21,7 +21,7 @@ class Menu
 
 			<a href='home'  >home</a>
 			  <a href='login'  > Se Connecter </a>
-			  <a href="singup" > S'inscrire </a>
+			  <a href="signup" > S'inscrire </a>
 			  <a href='contact'>Contact &  Adreesse </a>
 HTML;
   
