@@ -34,7 +34,7 @@
     	{
     		require(ROOTPATH.'elements'.DIRECTORY_SEPARATOR.'db_config.php');
     		$pdo  = new PDO($db_DSN , $db_USER , $db_PASS ) ;
-    		$request2 = $pdo->prepare("SELECT COUNT(*) FROM user WHERE (email = ? or id = ? ) and (password = SHA2( ? , 256) or password = ? )  and is_affiliat >= 0 ");
+    		$request2 = $pdo->prepare("SELECT COUNT(*) FROM user WHERE (email = ? or id = ? ) and (password = SHA2( ? , 256) or password = ? )  ");
     			 $request2->execute(array($this->_email ,$this->_email , $this->_pass , $this->_pass ));
     			 $count =  $request2->fetch(PDO::FETCH_ASSOC);
     			 return $count['COUNT(*)']	;
@@ -43,7 +43,7 @@
         {
                  require(ROOTPATH.'elements'.DIRECTORY_SEPARATOR.'db_config.php');
             $pdo  = new PDO($db_DSN , $db_USER , $db_PASS ) ;
-            $request3 = $pdo->prepare("SELECT * FROM user WHERE (email = ? or id = ? )  and (password = SHA2( ? , 256)   or password = ? ) and is_affiliat >= 0 ");
+            $request3 = $pdo->prepare("SELECT * FROM user WHERE (email = ? or id = ? )  and (password = SHA2( ? , 256)   or password = ? )  ");
     			 $request3->execute(array($this->_email ,$this->_email , $this->_pass , $this->_pass ));
                  $info =  $request3->fetch(PDO::FETCH_ASSOC);
                  return $info  ;
