@@ -62,7 +62,7 @@ if(isset($_POST['is_affiliat']) && @$_POST['is_affiliat']== -3 )
 	</nav>
 
     <aside id="logout" class=" py-4 bg-color-primary text-color-primary container modal fade" tabindex="100" data-width="760" >
-	<p class="text-center  h-100 "> Volez Vous Vraiment Vous Déconnecter ?</p>
+	<p class="text-center  h-100 "> Voulez vous vraiment vous déconnecter ?</p>
 	
 	<div class="h-25  modal-footer">
        <a  class=" close text-primary " data-dismiss="modal" aria-hidden="true"> Annuler </a> 

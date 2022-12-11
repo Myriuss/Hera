@@ -49,7 +49,7 @@ $infoRooter = $infoRooter->Info_Page($url);
 
 //--- Data Base 
 require(ROOTPATH.'elements'.DIRECTORY_SEPARATOR.'db_config.php');
- $pdo  = new PDO($db_DSN , $db_USER , $db_PASS ) ;
+ $pdo  = new PDO($db_DNS , $db_USER , $db_PASS ) ;
 
 require(ROOTPATH.'elements'.DIRECTORY_SEPARATOR.'header.php');
 require( $infoRooter['mypage']);

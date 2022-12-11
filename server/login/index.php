@@ -4,8 +4,6 @@
 
 */
 
-
-
 define("ROOTPATH",   dirname(dirname(__dir__)).DIRECTORY_SEPARATOR );
 
 

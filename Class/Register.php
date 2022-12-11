@@ -73,7 +73,7 @@
     			require(ROOTPATH.'elements'.DIRECTORY_SEPARATOR.'db_config.php');
 
 
-    			$pdo  = new PDO($db_DSN , $db_USER , $db_PASS ) ;
+    			$pdo  = new PDO($db_DNS , $db_USER , $db_PASS ) ;
     			 $request = $pdo->prepare("INSERT INTO user  ( `nom`, `prenom`,`email`, `password` ,`tel` ) VALUES (?, ? , ? , SHA2( ?, 256) , ? )" );
     			  $request->execute(array($nom , $prenom , $email , $pass , $tel ));
                   $this->_isbeenregister = true  ;
@@ -85,7 +85,7 @@
     	public 	function issub()
     	{
     		require(ROOTPATH.'elements'.DIRECTORY_SEPARATOR.'db_config.php');
-    		$pdo  = new PDO($db_DSN , $db_USER , $db_PASS ) ;
+    		$pdo  = new PDO($db_DNS , $db_USER , $db_PASS ) ;
     		$request2 = $pdo->prepare("SELECT COUNT(*) FROM user WHERE is_affiliat >= 0 AND email =?  ");
     			 $request2->execute(array($this->_email ));
     			 $count =  $request2->fetch(PDO::FETCH_ASSOC);

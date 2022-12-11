@@ -6,7 +6,7 @@
 define("ROOTPATH",   dirname(dirname(__dir__)).DIRECTORY_SEPARATOR );
 
 require(ROOTPATH.'elements'.DIRECTORY_SEPARATOR.'db_config.php');
-$pdo  = new PDO($db_DSN , $db_USER , $db_PASS ) ;
+$pdo  = new PDO($db_DNS , $db_USER , $db_PASS ) ;
 
 $db_choice = ['post'  ,'categorie' , 'categorie_post' ] ;
 $db_tanle= 'post' ;

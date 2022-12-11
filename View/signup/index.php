@@ -26,7 +26,7 @@ if (!empty($_SESSION)) {
   <label for="pass"> Mot De Passe </label> <input id="pass" type="password" name="pass"  required >  
   <label for="pass2"> Confirmez Votre Mot de Passe </label> <input id="pass2" type="password" name="pass"  required >  
   
-  <label for="conditions"  > <input id="conditions" type="checkbox" name="conditions" required > j'accpte et j'ai connaissence <a href="#condition" data-toggle="modal" > les conditions et treme dd'utilisations</a></label>  
+  <label for="conditions"  > <input id="conditions" type="checkbox" name="conditions" required > j'accepte et j'ai connaissance <a href="#condition" data-toggle="modal" > les conditions et treme dd'utilisations</a></label>  
 
 
   <div id="erreur" > </div>
@@ -34,7 +34,7 @@ if (!empty($_SESSION)) {
   <button class="btn btn-primary  my-4" > Inscription </button>  
 
 
-<p class="mt-5">Déjà Insrit ? <a href='Login' class=" btn btn-success">Connectez Vous</a></p>
+<p class="mt-5">Déjà Inscrit ? <a href='Login' class=" btn btn-success">Connectez Vous</a></p>
 
 </form>
 </div>
