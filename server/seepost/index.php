@@ -9,27 +9,27 @@ require(ROOTPATH.'elements'.DIRECTORY_SEPARATOR.'db_config.php');
 $pdo  = new PDO($db_DNS , $db_USER , $db_PASS ) ;
 
 $db_choice = ['post'  ,'categorie' , 'categorie_post' ] ;
-$db_tanle= 'post' ;
+$db_table= 'post' ;
 
 
 if ( !empty($_GET['table'])  && in_array($_GET['table'] , $db_choice  ) ) 
 {
-    $db_tanle =  $_GET['table']  ;
+    $db_table =  $_GET['table']  ;
 }
 
-if($db_tanle == "categorie"  )
+if($db_table == "categorie"  )
 {
     $requestText = " SELECT * FROM categorie  Where id  IS NOT NULL " ;
 }
-elseif( $db_tanle == "post"  )
+elseif( $db_table == "post"  )
 {
     $requestText = " SELECT post.* , image.name AS'miniature' FROM post , image  Where ( post.id =  image.for_post )  " ;
 }
-if ( $db_tanle == 'categorie_post' && !empty( @$_GET['id_categ'])  ) {
+if ( $db_table == 'categorie_post' && !empty( @$_GET['id_categ'])  ) {
     $id_categ = htmlentities($_GET['id_categ']) ;
    //$requestText = "  SELECT post.* , image.name from categorie_post  ,image   left join  post ON categorie_post.id_post = post.id  where (categorie_post.id_categorie = $id_categ ) and  ( post.id =  image.for_post )  " ;
 
-   $requestText = "SELECT post.* , image.name AS'miniature'  from  image,  categorie_post    left  JOIN post ON categorie_post.id_post = post.id     where (categorie_post.id_categorie = $id_categ  and post.id =  image.for_post ) and  ( post.id =  image.for_post )   ";
+   $requestText = "SELECT post.* , image.name AS'miniature' , categorie_post.id_categorie  as 'category_id'  from  image,  categorie_post    left  JOIN post ON categorie_post.id_post = post.id     where (categorie_post.id_categorie = $id_categ  and post.id =  image.for_post ) and  ( post.id =  image.for_post )   ";
 
 }
 
