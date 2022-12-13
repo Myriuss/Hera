@@ -1,6 +1,5 @@
 <?php 
 
-//mb_substr_count('haystack--11-11--', "-")-->4
 /**
  * 
  */

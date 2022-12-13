@@ -11,7 +11,7 @@ if (!empty($_SESSION)) {
 <div class="flexsignup">
 
 <div class="img">
-  <h1 class=" mb-4 font-weight-light "> Insrivez Vous </h1>
+  <h1 class=" mb-4 font-weight-light "> Inscrivez Vous </h1>
 <img src="View/Image/photo-1462206092226-f46025ffe607.jpg"  alt='image' >
 <img src="View/Image/photo-1529333166437-7750a6dd5a70.jpg" alt='image' >
 </div>
