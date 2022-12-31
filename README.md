@@ -11,4 +11,4 @@ src="https://firebasestorage.googleapis.com/v0/b/bessa-template.appspot.com/o/im
 * IMport Database to ``MySQL`` or ``phpmyadmin`` from 
 ``elements/H_imb.sql`` 
 * start apach .
-* go On ``https://localhost/``.
+* go to ``https://localhost/``.
